@@ -17,7 +17,7 @@ gem 'react-rails', '1.3.2'               # added for react.rb
 # Use opal as the JavaScript library
 gem 'opal-rails'
 gem 'therubyracer', platforms: :ruby
-
+gem 'bootstrap-sass'
 gem 'haml-rails'                # I prefer haml
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
