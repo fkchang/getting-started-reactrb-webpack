@@ -1,0 +1,5 @@
+Simple example of using webpack to add npm modules that can be
+accessed from asset pipeline javascript/Opal
+
+* Prior to running the 1st time, you should run "rake js:all"
+* to start webpack in watch mode for development re-compiling of the webpack bundle file run "rake js:watch"
