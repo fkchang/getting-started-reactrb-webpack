@@ -13,11 +13,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'reactive-ruby', '0.7.36'             # added for react.rb
+# gem 'reactive-ruby', path: '/Users/fkchang/src/react.rb'
 gem 'react-rails', '1.3.2'               # added for react.rb
 # Use opal as the JavaScript library
 gem 'opal-rails'
 gem 'therubyracer', platforms: :ruby
-gem 'bootstrap-sass'
+gem 'bootstrap-sass'            # to have bootstrap part of asset pipeline
 gem 'haml-rails'                # I prefer haml
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
