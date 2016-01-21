@@ -152,6 +152,22 @@ module Webpack
     end
   end
 
+  class TooltipExample < React::Component::Base
+    def render
+      tip = Rb.Tooltip(id: 'foo'){'a tooltip'}.as_node
+      div {
+        h2 { 'Tooltip Example'}
+        Rb.ButtonToolbar {
+          Rb.OverlayTrigger(placement: :top, overlay: tip.to_n) {
+            Rb.Button { 'has tooltip' }
+          }
+          Rb.Button { 'no tooltip' }
+        }
+      }
+    end
+  end
+
+  
   class ReactBootstrap < React::Component::Base
 
     def render
@@ -165,6 +181,7 @@ module Webpack
         AutodismissAlertExample {}
         BadgeExample {}
         AccordionExample {}
+        TooltipExample {}
       }
 
     end
